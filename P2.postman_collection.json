@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "ed4ba97c-92b6-472e-bd5d-df55805c428f",
+		"name": "P2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45519283",
+		"_collection_link": "https://josuetzul-4951736.postman.co/workspace/Josue-Tzul's-Workspace~f7af18ae-5bc0-4f65-8a16-6349464d65ff/collection/45519283-ed4ba97c-92b6-472e-bd5d-df55805c428f?action=share&source=collection_link&creator=45519283"
+	},
+	"item": [
+		{
+			"name": "GetAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/libros",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"libros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetOne",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/libros/5889f574-30d9-4bf6-a17e-6623fad8046a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"libros",
+						"5889f574-30d9-4bf6-a17e-6623fad8046a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostError",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Cien años de soledad\",\r\n  \"author\": \"Gabriel García Márquez\",\r\n  \"year\": 1967\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/libros",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"libros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
