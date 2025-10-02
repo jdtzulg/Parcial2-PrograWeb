@@ -78,10 +78,27 @@
 			"response": []
 		},
 		{
-			"name": "New Request",
+			"name": "Delete",
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Cien años de soledad\",\r\n  \"author\": \"Gabriel García Márquez\",\r\n  \"year\": 1967\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/libros/29ba243f-3552-48d7-82a0-38b3764ffaae",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"libros",
+						"29ba243f-3552-48d7-82a0-38b3764ffaae"
+					]
+				}
 			},
 			"response": []
 		}
